@@ -28,6 +28,7 @@ public class ExampleRequestData implements RequestData {
 		//In this example, the first line of the input from the socket
 		//will be saved as the data
 		String line;
+		//一次读取一大段数据
 //		while((line = br.readLine()) != null){
 //			if(line.trim().isEmpty()){
 //				break;

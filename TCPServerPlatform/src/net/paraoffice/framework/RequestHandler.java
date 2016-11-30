@@ -7,8 +7,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.concurrent.BlockingQueue;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -61,7 +59,8 @@ public class RequestHandler implements Runnable {
 //					//如果没有读进来任何字符，则提示未从客户端读取到数据
 //					log.warn("Cannot correctly receive the data from client.");
 //					//回复2，表示程序错误
-//					response(CODE_ERR_DATA);				
+//					response(CODE_ERR_DATA);		
+					log.debug(CODE_ERR_DATA);
 					return;
 				}	
 				
